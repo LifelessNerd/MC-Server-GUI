@@ -1,0 +1,11 @@
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\bin\Debug\MC-Server-GUI.exe.config
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\bin\Debug\MC-Server-GUI.exe
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\bin\Debug\MC-Server-GUI.pdb
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.csproj.AssemblyReference.cache
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.csproj.SuggestedBindingRedirects.cache
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC_Server_GUI.Properties.Resources.resources
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.csproj.GenerateResource.cache
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.csproj.CoreCompileInputs.cache
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.exe
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.pdb
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC_Server_GUI.RunEnvironmentForm.resources
