@@ -50,6 +50,7 @@
             this.showHidePic = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -111,6 +112,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem,
             this.serverToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -132,7 +134,7 @@
             // 
             this.runToolStripMenuItem.Image = global::MC_Server_GUI.Properties.Resources.run;
             this.runToolStripMenuItem.Name = "runToolStripMenuItem";
-            this.runToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.runToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.runToolStripMenuItem.Text = "Run";
             this.runToolStripMenuItem.Click += new System.EventHandler(this.runToolStripMenuItem_Click);
             // 
@@ -140,14 +142,14 @@
             // 
             this.stopToolStripMenuItem.Image = global::MC_Server_GUI.Properties.Resources.Untitled;
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             // 
             // reloadToolStripMenuItem
             // 
             this.reloadToolStripMenuItem.Image = global::MC_Server_GUI.Properties.Resources.reload;
             this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-            this.reloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reloadToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.reloadToolStripMenuItem.Text = "Reload";
             // 
             // onlinePlayersListBox
@@ -156,12 +158,6 @@
             this.onlinePlayersListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.onlinePlayersListBox.FormattingEnabled = true;
             this.onlinePlayersListBox.ItemHeight = 25;
-            this.onlinePlayersListBox.Items.AddRange(new object[] {
-            "Lorem",
-            "ipsum",
-            "dolor",
-            "sit",
-            "amet"});
             this.onlinePlayersListBox.Location = new System.Drawing.Point(1567, 31);
             this.onlinePlayersListBox.Name = "onlinePlayersListBox";
             this.onlinePlayersListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -177,6 +173,7 @@
             this.kickButton.TabIndex = 4;
             this.kickButton.Text = "KICK";
             this.kickButton.UseVisualStyleBackColor = true;
+            this.kickButton.Click += new System.EventHandler(this.kickButton_Click);
             // 
             // toggleOPButton
             // 
@@ -197,6 +194,7 @@
             this.banButton.TabIndex = 6;
             this.banButton.Text = "BAN";
             this.banButton.UseVisualStyleBackColor = true;
+            this.banButton.Click += new System.EventHandler(this.banButton_Click);
             // 
             // rtbIP
             // 
@@ -268,6 +266,13 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
             // RunEnvironmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,6 +333,7 @@
         private System.Windows.Forms.PictureBox showHidePic;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
     }
 }
 

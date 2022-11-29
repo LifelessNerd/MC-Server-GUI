@@ -278,5 +278,63 @@ namespace MC_Server_GUI
                 ipHidden = true;
             }
         }
+
+        private void kickButton_Click(object sender, EventArgs e)
+        {
+            if (input == null)
+            {
+                serverOutput.AppendText("Process not started" + Environment.NewLine);
+                return;
+            }
+            else
+            {
+                if (onlinePlayersListBox.Text == "") { return; }
+                string player = onlinePlayersListBox.Text;
+                input.WriteLine("kick " + player + Environment.NewLine);
+            }
+        }
+
+        private void banButton_Click(object sender, EventArgs e)
+        {
+            if (input == null)
+            {
+                serverOutput.AppendText("Process not started" + Environment.NewLine);
+                return;
+            }
+            else
+            {
+                if (onlinePlayersListBox.Text == "") { return; }
+                string player = onlinePlayersListBox.Text;
+                BanForm banForm = new BanForm(player, this);
+                banForm.Show();
+            }
+        }
+        public void banProcessFromForm(string player, TimeSpan timespan, string reason, bool permaBan, char mode)
+        {
+            if (mode == 't')
+            {
+                if (permaBan)
+                {
+                    input.WriteLine($"ban {player} {reason}" + Environment.NewLine);
+                    Console.WriteLine($"ban {player} {reason}");
+                }
+                else
+                {
+                    double totalSeconds = timespan.TotalSeconds;
+                    input.WriteLine($"ban {player} {totalSeconds}s {reason}" + Environment.NewLine);
+                    Console.WriteLine($"ban {player} {totalSeconds}s {reason}");
+                }
+            } else
+            {
+                input.WriteLine($"ban {player} {reason}" + Environment.NewLine);
+                Console.WriteLine($"ban {player} {reason}");
+            }
+                
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Show self made (?) settings menu
+        }
     }
 }
