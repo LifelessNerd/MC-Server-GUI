@@ -55,6 +55,7 @@
     <Compile Include="BanForm.Designer.cs">
       <DependentUpon>BanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyUserSettings.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -38,6 +38,22 @@ namespace MC_Server_GUI
             int historyIndex = inputHistory.Count;
 
         }
+            MyUserSettings mus;
+
+        //https://learn.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-create-application-settings?view=netframeworkdesktop-4.8
+        // Saving settings and sjit
+        private void RunEnvironmentForm_Load(object sender, EventArgs e)
+        {
+            mus = new MyUserSettings();
+            //mus.BackgroundColor = Color.Black; // This is how you set settings, these are persistent
+            this.DataBindings.Add(new Binding("BackColor", mus, "BackgroundColor"));
+            Console.WriteLine("Loaded settings");
+        }
+        void RunEnvironmentForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Console.WriteLine("test");
+            mus.Save();
+        }
 
         private void runToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -336,5 +352,6 @@ namespace MC_Server_GUI
         {
             //Show self made (?) settings menu
         }
+
     }
 }
