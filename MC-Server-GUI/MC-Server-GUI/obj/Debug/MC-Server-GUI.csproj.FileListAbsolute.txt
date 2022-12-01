@@ -10,3 +10,4 @@ D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Ser
 D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC-Server-GUI.pdb
 D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC_Server_GUI.RunEnvironmentForm.resources
 D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC_Server_GUI.BanForm.resources
+D:\Programming\GitHub\MC-Server-GUI\MC-Server-GUI\MC-Server-GUI\obj\Debug\MC_Server_GUI.Form2.resources

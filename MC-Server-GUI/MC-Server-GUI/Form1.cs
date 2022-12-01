@@ -44,14 +44,35 @@ namespace MC_Server_GUI
         // Saving settings and sjit
         private void RunEnvironmentForm_Load(object sender, EventArgs e)
         {
+            LoadSettings();
+            if (mus.FirstStartup == null)
+            {
+                FirstStartupLogic();
+            }
+        }
+        private void LoadSettings()
+        {
             mus = new MyUserSettings();
-            //mus.BackgroundColor = Color.Black; // This is how you set settings, these are persistent
-            this.DataBindings.Add(new Binding("BackColor", mus, "BackgroundColor"));
+            if (mus.DarkMode == "true")
+            {
+                this.BackColor = Color.Black;
+                this.Invalidate();
+                Console.WriteLine("1");
+            } else
+            {
+                this.BackColor = Color.DarkGray;
+                this.Invalidate();
+                Console.WriteLine("2");
+            }
             Console.WriteLine("Loaded settings");
+        }
+        private void FirstStartupLogic()
+        {
+            mus = new MyUserSettings();
+            Console.WriteLine($"{mus.ServerPath}");
         }
         void RunEnvironmentForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Console.WriteLine("test");
             mus.Save();
         }
 
